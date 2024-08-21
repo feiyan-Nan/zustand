@@ -13,6 +13,7 @@ export const useStore = create((set) => ({
 function Eg1() {
   return (
     <>
+      <h1>Eg 1</h1>
       <Counter />
       <AnotherControl />
       <Control />
