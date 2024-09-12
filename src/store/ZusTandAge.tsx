@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { useUserStore } from './ZustandExample';
+import {useWhyDidYouUpdate} from "ahooks";
 
 function ZusTandAge() {
   const { age, addAge } = useUserStore((state) => ({
     age: state.age,
     addAge: state.addAge,
   }));
+  useWhyDidYouUpdate('ZusTandAge', { age, addAge })
   // const { age, addAge } = useUserStore();
-  console.log('ZusTandAge');
   const onClick = () => {
     addAge(5);
   };

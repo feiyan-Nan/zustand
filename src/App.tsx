@@ -3,6 +3,7 @@ import './App.css';
 import ContextExample from './context/ContextExample';
 import ZustandExample from './store/ZustandExample';
 import Eg1 from './eg1/Eg1';
+import Callback from "./Callback.tsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,8 +12,9 @@ function App() {
     <>
       <div>
         {/* <ContextExample /> */}
-        {/* <ZustandExample /> */}
+        {/* <ZustandExample />*/}
         <Eg1 />
+        <Callback></Callback>
       </div>
     </>
   );

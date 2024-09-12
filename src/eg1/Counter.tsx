@@ -1,4 +1,5 @@
-import { useStore } from './Eg1';
+import {useStore} from "./useStore.ts";
+
 
 function Counter() {
   const { count } = useStore();
